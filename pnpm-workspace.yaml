@@ -1,0 +1,8 @@
+nodeLinker: hoisted
+# pnpm 11+
+allowBuilds:
+  esbuild: true
+# pnpm 9 / 10 兼容
+onlyBuiltDependencies:
+  - esbuild
+verifyDepsBeforeRun: false

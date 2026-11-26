@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">回声地图封面</title>
+  <desc id="desc">深色背景上由橙色同心声波、坐标网格和细线构成的抽象封面。</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff5a1f" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#f3ede2" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="#12110f"/>
+  <rect width="1600" height="1200" fill="url(#grid)"/>
+  <ellipse cx="780" cy="600" rx="530" ry="530" fill="url(#glow)"/>
+  <g fill="none" stroke="#f3ede2" stroke-opacity=".56">
+    <path d="M225 726C286 422 561 199 859 265s457 345 414 620-372 358-650 247S168 1004 225 726Z" stroke-width="1.3"/>
+    <path d="M301 715C354 460 573 282 823 333s371 286 337 514-298 286-523 198S252 951 301 715Z"/>
+    <path d="M375 700C420 496 589 358 789 400s288 230 260 408-234 219-406 152S333 889 375 700Z"/>
+    <path d="M451 686C485 532 609 431 758 463s208 177 186 306-171 166-294 114S416 831 451 686Z"/>
+    <path d="M526 670C551 565 631 499 729 520s137 126 122 214-112 115-190 79S508 770 526 670Z"/>
+  </g>
+  <g fill="none" stroke="#ff5a1f">
+    <path d="M266 660C323 384 594 195 892 301s417 392 323 641-489 299-738 124S219 889 266 660Z" stroke-width="2.2"/>
+    <path d="M405 668C452 487 620 369 811 425s290 246 235 417-317 207-506 94S362 818 405 668Z" stroke-width="1.6" stroke-opacity=".8"/>
+  </g>
+  <g stroke="#f3ede2" stroke-opacity=".45">
+    <path d="M120 92V1108M1480 92V1108" stroke-dasharray="3 11"/>
+    <path d="M120 600H1480" stroke-opacity=".2"/>
+    <path d="M800 92V1108" stroke-opacity=".15"/>
+  </g>
+  <g fill="#f3ede2" font-family="'Cascadia Code','SFMono-Regular',monospace" font-size="19" letter-spacing="3">
+    <text x="120" y="65">FIELD RECORD / 003</text>
+    <text x="1195" y="65">31.2304° N</text>
+    <text x="120" y="1148">URBAN ACOUSTIC ARCHIVE</text>
+    <text x="1290" y="1148">2025</text>
+  </g>
+  <g fill="#ff5a1f">
+    <rect x="120" y="587" width="7" height="7"/>
+    <rect x="1473" y="587" width="7" height="7"/>
+    <circle cx="1181" cy="811" r="7"/>
+  </g>
+  <g font-family="'Cascadia Code','SFMono-Regular',monospace">
+    <rect x="1118" y="752" width="212" height="110" fill="#12110f" stroke="#f3ede2" stroke-opacity=".4"/>
+    <text x="1137" y="785" fill="#f3ede2" font-size="15" letter-spacing="2">SIGNAL / 08:42</text>
+    <text x="1137" y="814" fill="#ff5a1f" font-size="27">72.4 dB</text>
+    <text x="1137" y="842" fill="#f3ede2" font-size="13" opacity=".65">JIANYE ROAD · LIVE</text>
+  </g>
+  <path d="M1091 887h299" stroke="#f3ede2" stroke-opacity=".4"/>
+  <g fill="#f3ede2" font-family="Georgia,'Songti SC',serif">
+    <text x="120" y="1036" font-size="118" letter-spacing="-4">Echo</text>
+    <text x="124" y="1095" font-size="34" font-style="italic" fill="#ff5a1f">atlas / 回声地图</text>
+  </g>
+  <rect width="1600" height="1200" filter="url(#grain)" opacity=".55"/>
+</svg>

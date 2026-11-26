@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">气候采样地图</title>
+  <desc id="desc">米色地图上的红色数据点、等值线与年份标注，呈现气候采样城市分布。</desc>
+  <defs>
+    <pattern id="mapgrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" fill="none" stroke="#171713" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".09"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#eee9dc"/>
+  <rect width="1600" height="1000" fill="url(#mapgrid)"/>
+  <g fill="none" stroke="#171713" stroke-opacity=".4">
+    <path d="M90 780C207 636 261 497 394 470s183 66 270 9 109-187 245-197 196 86 301 47 158-124 275-159"/>
+    <path d="M84 835C219 689 260 553 399 524s181 73 268 16 113-192 249-201 201 93 306 54 150-123 268-158"/>
+    <path d="M116 711C224 586 284 456 405 435s169 49 256-7 110-170 239-180 206 75 306 39 154-106 253-139" stroke-dasharray="4 8" stroke-opacity=".2"/>
+  </g>
+  <g fill="none" stroke="#171713" stroke-opacity=".12">
+    <path d="M159 540c117-57 210-57 293 9s101 158 43 246-194 129-304 94-159-155-125-245 93-75 151-64"/>
+    <path d="M997 611c92-30 179-14 245 48s92 152 48 231-160 120-254 86-144-135-122-218 47-132 83-147"/>
+    <path d="M1216 254c83 11 140 58 147 122s-42 117-119 119-146-44-147-110 30-103 119-131" stroke-dasharray="2 7"/>
+  </g>
+  <g fill="#c83a24">
+    <circle cx="309" cy="438" r="8"/><circle cx="381" cy="588" r="6"/><circle cx="452" cy="514" r="10"/>
+    <circle cx="607" cy="367" r="6"/><circle cx="710" cy="501" r="9"/><circle cx="802" cy="306" r="7"/>
+    <circle cx="865" cy="577" r="6"/><circle cx="938" cy="451" r="10"/><circle cx="1064" cy="349" r="7"/>
+    <circle cx="1142" cy="605" r="8"/><circle cx="1244" cy="483" r="6"/><circle cx="1335" cy="348" r="9"/>
+    <circle cx="1412" cy="546" r="6"/><circle cx="480" cy="697" r="7"/><circle cx="988" cy="724" r="8"/>
+  </g>
+  <g fill="none" stroke="#c83a24">
+    <circle cx="452" cy="514" r="26" stroke-width="1.4"/>
+    <circle cx="452" cy="514" r="42" stroke-opacity=".35"/>
+    <circle cx="938" cy="451" r="26" stroke-width="1.4"/>
+    <circle cx="938" cy="451" r="42" stroke-opacity=".35"/>
+  </g>
+  <g font-family="'Cascadia Code',monospace" fill="#171713">
+    <text x="88" y="72" font-size="17" letter-spacing="3">URBAN HEAT OBSERVATION NETWORK</text>
+    <text x="1510" y="72" font-size="17" text-anchor="end">1980—2025</text>
+    <text x="88" y="952" font-size="14" fill-opacity=".55">15 CITIES / ANNUAL MEAN TEMPERATURE ANOMALY</text>
+    <text x="1510" y="952" font-size="14" text-anchor="end" fill-opacity=".55">DOT SIZE = YEARS OF RECORD</text>
+  </g>
+  <g font-family="'Cascadia Code',monospace" font-size="13" fill="#171713">
+    <text x="474" y="466" fill="#c83a24">SHANGHAI / +1.52°C</text>
+    <text x="960" y="403" fill="#c83a24">WUHAN / +1.47°C</text>
+    <text x="1128" y="879" font-size="12" fill-opacity=".55">GRID: 50 × 50 KM</text>
+    <text x="1128" y="902" font-size="12" fill-opacity=".55">PROJECTION: MERCATOR</text>
+  </g>
+  <g font-family="Georgia,'Songti SC',serif" fill="#171713">
+    <text x="88" y="878" font-size="52">A map of warming,</text>
+    <text x="92" y="916" font-size="27" font-style="italic" fill="#c83a24">not a map of weather.</text>
+  </g>
+  <rect width="1600" height="1000" filter="url(#noise)" opacity=".55"/>
+</svg>

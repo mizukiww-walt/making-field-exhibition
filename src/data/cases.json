@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-11-24",
+  "cases": [
+    {
+      "schemaVersion": 1,
+      "id": "case-001",
+      "slug": "waterdrop-bamboo",
+      "title": "水滴",
+      "titleEn": "WATERDROP",
+      "subtitle": "用参数化模拟，逼近一根竹子的自然弯曲",
+      "year": "2024",
+      "authors": [
+        { "name": "Ye Chenlong", "role": "建筑学 2019" },
+        { "name": "Chen Tingkai", "role": "建筑学 2020" },
+        { "name": "Luo Mandi", "role": "建筑学 2021" },
+        { "name": "Weishun Xu", "role": "导师" }
+      ],
+      "profession": "architecture",
+      "contentType": "digital-fabrication",
+      "tools": ["Rhino", "Grasshopper", "Kangaroo Physics", "AR 投影"],
+      "tags": ["竹构", "参数化设计", "足尺建造", "节点", "混合现实"],
+      "summary": "从一根可以弯曲的竹竿出发，团队用 Kangaroo 物理模拟寻找形态，再把数字节点投影回真实场地，搭建出一座水滴形竹构。",
+      "cover": {
+        "src": "/media/cases/waterdrop/cover.webp",
+        "alt": "施工现场中，白色数字线框叠加在弯曲的竹构骨架上",
+        "caption": "数字线框与真实竹构在施工现场重合。图片来自项目过程记录。"
+      },
+      "featured": true,
+      "accent": "#a8c46e",
+      "readingMinutes": 7,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "竹子有韧性，也有脾气。它会被弯成漂亮的弧线，却很难被精确地弯到图纸指定的位置。当设计从直线、正交的空间转向非线性形态，传统二维图纸便失去了传递建造信息的能力。"
+        },
+        {
+          "type": "heading",
+          "kicker": "PROBLEM / 问题",
+          "text": "误差，发生在电脑之外"
+        },
+        {
+          "type": "paragraph",
+          "text": "团队最初面对的是一个看似简单的问题：怎样让竹竿按照设计意图弯曲，并在节点处稳定地连接？竹管的直径、含水率和纤维方向并不均匀，同一根竹子在不同位置的弹性也不同。模型里的一次拖拽，落到现场往往需要几个人反复试弯。"
+        },
+        {
+          "type": "paragraph",
+          "text": "如果继续依赖传统的放线、定位与手工调整，复杂曲面的误差会在搭建过程中被不断放大。项目因此把重点从“画出一个形”转向“设计一套可被现场执行的校准过程”。"
+        },
+        {
+          "type": "heading",
+          "kicker": "METHOD / 方法",
+          "text": "先让模型学会“松手”"
+        },
+        {
+          "type": "paragraph",
+          "text": "在 Rhino 中建立杆件与节点的几何关系后，团队用 Grasshopper 组织参数，并借助 Kangaroo Physics 的动力学松弛模拟竹竿的主动弯曲。与其直接指定每一根杆件的终点，不如先给定边界、长度与连接关系，让材料在模拟中找到更自然的平衡状态。"
+        },
+        {
+          "type": "image",
+          "layout": "wide",
+          "image": {
+            "src": "/media/cases/waterdrop/model-floor.webp",
+            "alt": "地面上的白色竹条模型，呈现出不规则的水滴形轮廓",
+            "caption": "1:1 的地面放样模型：先用轻质竹条验证节点的连接逻辑与整体轮廓。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "电脑里的“松弛”并不自动等于现场的真实。团队把模拟结果做成足尺的竹条模型，在地面上重新连接、试弯、观察。纸胶带临时固定节点，模型被反复拆开再装回，直到杆件之间的相对关系变得清楚。模型不只是缩小的房子，而是一种可以上手讨论的媒介。"
+        },
+        {
+          "type": "image",
+          "layout": "wide",
+          "image": {
+            "src": "/media/cases/waterdrop/model-frame.webp",
+            "alt": "室内地面上的竹条框架模型，节点用胶带固定",
+            "caption": "足尺节点模型，用于比较不同连接方式下的弯曲表现。"
+          }
+        },
+        {
+          "type": "quote",
+          "text": "我们不是在画一根弯掉的竹子，而是在给现场写一套可以反复校准的动作。",
+          "attribution": "项目过程记录"
+        },
+        {
+          "type": "heading",
+          "kicker": "ON SITE / 现场",
+          "text": "把节点投影回地面"
+        },
+        {
+          "type": "paragraph",
+          "text": "真正进入搭建阶段后，团队把数字模型中的关键节点通过 AR 投影放回实际场地。施工者不需要在脑中把平面图翻译成空间关系，而是可以直接看到杆件应该落在哪里。长边与短边上的节点被逐一固定，竹竿在连接点保持平行，使节点既有足够的约束，又保留继续微调的可能。"
+        },
+        {
+          "type": "paragraph",
+          "text": "这是一种混合的工作方式：数字模型提供全局控制，真实材料提供局部反馈。每一次绑扎、每一段弯曲都会改变下一个节点的位置，现场因此成为一个持续更新的模型。"
+        },
+        {
+          "type": "image",
+          "layout": "wide",
+          "image": {
+            "src": "/media/cases/waterdrop/construction.webp",
+            "alt": "室内施工现场，弯曲的竹竿从砖块基础向上汇聚，顶部覆盖半透明织物",
+            "caption": "搭建中的水滴形竹构。节点、基础与临时支撑共同构成一个仍在调整的系统。"
+          }
+        },
+        {
+          "type": "heading",
+          "kicker": "OUTCOME / 结果",
+          "text": "一个尚未封顶的水滴"
+        },
+        {
+          "type": "paragraph",
+          "text": "最终成型的竹构以连续的拱与分叉的节点构成水滴般的外轮廓，顶部覆盖半透明织物，形成一个轻薄、可进入的临时空间。它没有把竹子加工成标准构件，而是把材料的不确定性纳入了设计过程。"
+        },
+        {
+          "type": "list",
+          "items": [
+            "用动力学模拟替代对最终形态的静态指定。",
+            "用足尺节点模型校准电脑与真实材料之间的偏差。",
+            "用 AR 投影把数字坐标转译为现场可执行的位置。",
+            "把施工过程视为设计的延续，而不是设计的执行。"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "项目留下的不只是一个竹构，更是一套可以迁移到其他柔性材料的工作方法：先理解材料如何响应，再设计控制它的方式。"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "case-002",
+      "slug": "caadira-green-wall",
+      "title": "可生长的绿墙",
+      "titleEn": "CAADIRA",
+      "subtitle": "把植物生长空间写进黏土 3D 打印的路径里",
+      "year": "2023–2024",
+      "authors": [
+        { "name": "Xu Weishun", "role": "研究 / 设计" },
+        { "name": "Jin Chenxi", "role": "研究 / 设计" },
+        { "name": "Qian Xidong", "role": "研究 / 设计" },
+        { "name": "Jin Zihao", "role": "研究 / 设计" }
+      ],
+      "profession": "architecture",
+      "contentType": "research",
+      "tools": ["Rhino", "Grasshopper", "Clay 3D Printing"],
+      "tags": ["黏土打印", "绿墙", "模块化", "可持续材料", "砌筑"],
+      "summary": "通过黏土 3D 打印重新设计绿墙砌块的内部空腔，让水分、根系与模块化砌筑在同一块砖里相遇。",
+      "cover": {
+        "src": "/media/cases/caadira/cover.webp",
+        "alt": "由多层黏土打印砌块组成的绿墙，缝隙中生长着蕨类与苔藓",
+        "caption": "室内绿墙原型。植物沿着打印砌块预留的空腔生长。"
+      },
+      "featured": true,
+      "accent": "#c8855d",
+      "readingMinutes": 8,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "绿墙真正困难的地方，并不在于把植物挂在立面上。水、空气、根系和结构需要在极小的厚度里共存，而常见的模块化种植盒往往把这些系统彼此分开：结构是结构，种植是种植，灌溉又是另一套管线。"
+        },
+        {
+          "type": "heading",
+          "kicker": "CONTEXT / 背景",
+          "text": "植物需要的不均匀空间"
+        },
+        {
+          "type": "paragraph",
+          "text": "植物根系并不会在均质的土壤里均匀铺开。它们会寻找水分、绕开障碍，在空隙中形成自己的路径。研究团队把这种“不均匀”视为设计的起点：如果砌块内部可以打印出连续变化的空腔，是否就能让承重、蓄水与根系生长共享同一个几何体？"
+        },
+        {
+          "type": "paragraph",
+          "text": "黏土 3D 打印提供了这种自由度。打印路径不再只是把材料堆叠成体块，而可以直接成为砌块内部空腔的边界。通过调整路径间距、层高与悬挑，团队能够在一个标准砌块里制造出深浅不一的种植空间。"
+        },
+        {
+          "type": "image",
+          "layout": "wide",
+          "image": {
+            "src": "/media/cases/caadira/process.webp",
+            "alt": "八张并置的照片展示黏土打印、模具浇筑、脱模与植物种植过程",
+            "caption": "从打印、浇筑、脱模到种植，砌块在不同工位上完成自己的生命周期。"
+          }
+        },
+        {
+          "type": "heading",
+          "kicker": "METHOD / 方法",
+          "text": "一块砖，两套几何"
+        },
+        {
+          "type": "paragraph",
+          "text": "项目将黏土打印与混凝土浇筑结合，形成一种混合模具的工作流。打印出的黏土部分决定了种植空腔的形态，可重复使用的框架则控制砌块的外轮廓与结构厚度。这样既保留了定制化的内部空间，也减少了每次制作都要重新打印整套模具的浪费。"
+        },
+        {
+          "type": "paragraph",
+          "text": "在数字端，Grasshopper 脚本把砌块的尺寸、空腔深度与打印路径组织成可调参数。改变一个参数，打印路径、模具高度与植物种植位置会一起更新。设计因此更像是在编写一套生产方式，而不是绘制一个固定物件。"
+        },
+        {
+          "type": "image",
+          "layout": "inset",
+          "image": {
+            "src": "/media/cases/caadira/wall-detail.webp",
+            "alt": "绿墙局部特写，植物从打印砌块的缝隙中垂下",
+            "caption": "植物从砌块之间的缝隙与内部空腔中生长出来。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "为了让植物获得足够的水分，团队在砌块内部预留了连续的毛细通道，并在底部设置排水与蓄水空间。根系可以沿着空腔向下寻找水源，多余的水则从模块之间的接缝排出。"
+        },
+        {
+          "type": "quote",
+          "text": "一块砖不只承担结构，也为植物留出时间。",
+          "attribution": "项目研究笔记"
+        },
+        {
+          "type": "heading",
+          "kicker": "OUTCOME / 结果",
+          "text": "在室内种下一面墙"
+        },
+        {
+          "type": "paragraph",
+          "text": "研究最终以一面室内绿墙作为验证。不同砌块根据植物种类与朝向承担不同的蓄水深度，模块化拼装让墙面可以逐步扩展，也允许单块替换。植物的生长使墙面持续变化，打印留下的层纹则成为另一种时间尺度上的记录。"
+        },
+        {
+          "type": "paragraph",
+          "text": "项目没有把“可持续”停留在材料替换上，而是把植物、水与结构的相互关系提前写进了制造路径。对于后续的模块化绿墙来说，这提供了一种从几何出发、而不是从设备出发的设计方法。"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/media/cases/caadira/mold.webp",
+          "alt": "木框中堆叠的黏土打印砌块与浇筑模具",
+          "caption": "混合模具：可重复使用的外框与定制打印内芯。"
+        },
+        {
+          "src": "/media/cases/caadira/assembly.webp",
+          "alt": "三个线稿展示砌块的组装、浇筑与脱模步骤",
+          "caption": "砌块组装与浇筑流程示意。"
+        },
+        {
+          "src": "/media/cases/caadira/printed-block.webp",
+          "alt": "单个黏土打印砌块，表面有清晰的打印层纹与圆形孔洞",
+          "caption": "单个打印砌块。层纹记录了喷头路径，也增加了植物附着的表面。"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "case-003",
+      "slug": "echo-atlas",
+      "title": "回声地图",
+      "titleEn": "ECHO ATLAS",
+      "subtitle": "把一条街的噪声，折叠成可以行走的声景档案",
+      "year": "2025",
+      "authors": [
+        { "name": "林知远", "role": "交互设计" },
+        { "name": "周可", "role": "声音研究" }
+      ],
+      "profession": "digital-media",
+      "contentType": "interactive-installation",
+      "tools": ["TouchDesigner", "Ableton Live", "Arduino"],
+      "tags": ["声景", "城市数据", "实时影像", "感应装置"],
+      "summary": "用三个月的声音采样建立城市声景档案，再把实时噪声转译成不断变化的环形影像与触觉反馈。",
+      "cover": {
+        "src": "/media/cases/echo-atlas/cover.svg",
+        "alt": "深色背景上的橙色同心声波与数据标注构成的抽象封面",
+        "caption": "回声地图：城市声景档案的视觉系统。"
+      },
+      "demo": true,
+      "accent": "#ff5a1f",
+      "readingMinutes": 5,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "我们如何记住一条街？不是通过地图上的名字，而是通过清晨的卷帘门、午后的电动车和夜里突然安静下来的那几分钟。项目从 17 个采样点出发，把城市里的声音变成一份可以被观看、触摸和重访的档案。"
+        },
+        {
+          "type": "heading",
+          "kicker": "FIELDWORK / 采样",
+          "text": "先听见，再分类"
+        },
+        {
+          "type": "paragraph",
+          "text": "团队在三个月内完成了 120 段声景采样，并用“人声、交通、机械、自然、混合”五类标签进行人工标注。每一段声音都保留了时间、坐标与天气信息，它们共同组成一张不稳定的城市听觉地图。"
+        },
+        {
+          "type": "heading",
+          "kicker": "TRANSLATION / 转译",
+          "text": "让声音有了体积"
+        },
+        {
+          "type": "paragraph",
+          "text": "在 TouchDesigner 中，实时音频的频谱被映射为同心环的半径与密度，低频让环向外扩张，高频则改变边缘的颗粒感。观众靠近装置时，超声波传感器会触发一段对应的街道采样，环形影像随之收缩。"
+        },
+        {
+          "type": "quote",
+          "text": "声音没有形状，但它可以制造一种被包围的感觉。",
+          "attribution": "展览现场记录"
+        },
+        {
+          "type": "paragraph",
+          "text": "装置并不试图还原一条真实的街道，而是把听觉记忆重新组织成一种空间经验。观众在环形的影像前停留得越久，越能察觉那些原本被忽略的微小声音。"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/media/cases/echo-atlas/plate-01.svg",
+          "alt": "黑底上的橙色声波曲线与采样坐标点",
+          "caption": "声景采样轨迹与频谱曲线叠加。"
+        },
+        {
+          "src": "/media/cases/echo-atlas/plate-02.svg",
+          "alt": "米色背景上排列的十二个圆形声景图案",
+          "caption": "十二段声景的视觉索引。"
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "case-004",
+      "slug": "paper-climate",
+      "title": "纸上气候",
+      "titleEn": "PAPER CLIMATE",
+      "subtitle": "让一组气候数据，成为可以被翻阅的日常读物",
+      "year": "2025",
+      "authors": [
+        { "name": "许一帆", "role": "信息设计" },
+        { "name": "陈默", "role": "编辑设计" }
+      ],
+      "profession": "visual-communication",
+      "contentType": "data-narrative",
+      "tools": ["D3.js", "Figma", "Observable"],
+      "tags": ["气候数据", "信息设计", "出版物", "交互图表"],
+      "summary": "把 45 年的气温异常值做成一本可以翻阅的册子，同时用网页图表让读者回到具体年份的体感记忆。",
+      "cover": {
+        "src": "/media/cases/paper-climate/cover.svg",
+        "alt": "由蓝到橙的暖化条纹构成的数据封面，叠加纸张网格与标注",
+        "caption": "纸上气候：暖化条纹作为出版物的封面。"
+      },
+      "demo": true,
+      "accent": "#27607a",
+      "readingMinutes": 4,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "气候数据通常以折线图出现：一条向上抬升的线，几个被标注的极端年份。它准确，却也很容易被快速划过。项目尝试把同一组数据放进另一种阅读节奏里，让数字重新获得重量、触感与时间感。"
+        },
+        {
+          "type": "heading",
+          "kicker": "FORMAT / 形式",
+          "text": "从一张图到一本册子"
+        },
+        {
+          "type": "paragraph",
+          "text": "设计把 1980 至 2025 年的年均温异常值转译为 45 条颜色渐变的竖纹。每一条纹代表一年，读者可以用手指沿着书页边缘快速翻动，看到颜色逐渐从蓝绿转向橙红。数据不再只发生在屏幕上，也发生在翻页的动作里。"
+        },
+        {
+          "type": "paragraph",
+          "text": "网页版本保留了同样的条纹结构，但增加了悬浮与点选：当读者选中某一年，页面会显示当年的新闻标题、城市温度与一段口述记忆。数据因此从“趋势”回到“那一年”。"
+        },
+        {
+          "type": "quote",
+          "text": "我们不想让读者记住一个数字，而是想让他们记住读完这个数字之后的停顿。",
+          "attribution": "设计说明"
+        },
+        {
+          "type": "paragraph",
+          "text": "项目最终形成一本 64 页的册子和一个可滚动的网页原型。它不提供结论，而是把气候变化的尺度交给读者的手、眼睛和时间。"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "/media/cases/paper-climate/plate-01.svg",
+          "alt": "米色地图上的红色数据点与年份标注",
+          "caption": "采样城市与极端年份的分布。"
+        },
+        {
+          "src": "/media/cases/paper-climate/plate-02.svg",
+          "alt": "三本册子的书页排版，展示暖化条纹与文字",
+          "caption": "册子内页的三种阅读节奏。"
+        }
+      ]
+    }
+  ]
+}

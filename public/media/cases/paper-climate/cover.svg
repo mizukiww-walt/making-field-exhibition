@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">纸上气候封面</title>
+  <desc id="desc">以蓝到橙的暖化条纹为背景，叠加数据标注与纸张网格的抽象封面。</desc>
+  <defs>
+    <pattern id="paper" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#171713" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".1"/></feComponentTransfer>
+    </filter>
+    <clipPath id="stripes"><rect x="132" y="180" width="1336" height="690"/></clipPath>
+  </defs>
+  <rect width="1600" height="1200" fill="#eee9dc"/>
+  <rect width="1600" height="1200" fill="url(#paper)"/>
+  <g clip-path="url(#stripes)">
+    <rect x="132" y="180" width="44.5" height="690" fill="#193e57"/>
+    <rect x="176.5" y="180" width="44.5" height="690" fill="#1b4661"/>
+    <rect x="221" y="180" width="44.5" height="690" fill="#23506b"/>
+    <rect x="265.5" y="180" width="44.5" height="690" fill="#2a5a74"/>
+    <rect x="310" y="180" width="44.5" height="690" fill="#37667d"/>
+    <rect x="354.5" y="180" width="44.5" height="690" fill="#477287"/>
+    <rect x="399" y="180" width="44.5" height="690" fill="#557d90"/>
+    <rect x="443.5" y="180" width="44.5" height="690" fill="#688998"/>
+    <rect x="488" y="180" width="44.5" height="690" fill="#7a97a1"/>
+    <rect x="532.5" y="180" width="44.5" height="690" fill="#91a4a8"/>
+    <rect x="577" y="180" width="44.5" height="690" fill="#a6b0ad"/>
+    <rect x="621.5" y="180" width="44.5" height="690" fill="#b6b8ad"/>
+    <rect x="666" y="180" width="44.5" height="690" fill="#c7bda8"/>
+    <rect x="710.5" y="180" width="44.5" height="690" fill="#d0b39a"/>
+    <rect x="755" y="180" width="44.5" height="690" fill="#d6a386"/>
+    <rect x="799.5" y="180" width="44.5" height="690" fill="#d99272"/>
+    <rect x="844" y="180" width="44.5" height="690" fill="#dc7d5b"/>
+    <rect x="888.5" y="180" width="44.5" height="690" fill="#dd6947"/>
+    <rect x="933" y="180" width="44.5" height="690" fill="#dc5435"/>
+    <rect x="977.5" y="180" width="44.5" height="690" fill="#d94328"/>
+    <rect x="1022" y="180" width="44.5" height="690" fill="#ce3625"/>
+    <rect x="1066.5" y="180" width="44.5" height="690" fill="#bd2f25"/>
+    <rect x="1111" y="180" width="44.5" height="690" fill="#a72a25"/>
+    <rect x="1155.5" y="180" width="44.5" height="690" fill="#8e2724"/>
+    <rect x="1200" y="180" width="44.5" height="690" fill="#74231f"/>
+    <rect x="1244.5" y="180" width="44.5" height="690" fill="#5b201c"/>
+    <rect x="1289" y="180" width="44.5" height="690" fill="#491d1a"/>
+    <rect x="1333.5" y="180" width="44.5" height="690" fill="#3a1a18"/>
+    <rect x="1378" y="180" width="44.5" height="690" fill="#2c1715"/>
+    <rect x="1422.5" y="180" width="45.5" height="690" fill="#1c1311"/>
+  </g>
+  <g stroke="#171713" fill="none">
+    <rect x="132" y="180" width="1336" height="690" stroke-width="1.5"/>
+    <path d="M132 145H1468M132 89H1468" stroke-opacity=".3"/>
+    <path d="M132 905V936M1468 905V936M800 905V936" stroke-opacity=".5"/>
+  </g>
+  <g fill="#171713" font-family="'Cascadia Code','SFMono-Regular',monospace">
+    <text x="132" y="73" font-size="18" letter-spacing="3">MATERIAL ARCHIVE / CLIMATE DATA</text>
+    <text x="1275" y="73" font-size="18">1980 — 2025</text>
+    <text x="132" y="1000" font-size="15" letter-spacing="2" fill-opacity=".65">ANNUAL TEMPERATURE ANOMALY · EAST CHINA</text>
+    <text x="132" y="1040" font-size="14" fill-opacity=".55">EACH STRIPE = ONE YEAR / DATA NORMALIZED</text>
+    <text x="1468" y="1000" text-anchor="end" font-size="15">+1.5°C</text>
+    <text x="1468" y="1040" text-anchor="end" font-size="14" fill-opacity=".55">SOURCE: MOCK DATA</text>
+  </g>
+  <g font-family="Georgia,'Songti SC',serif" fill="#171713">
+    <text x="132" y="1135" font-size="118" letter-spacing="-4">Paper</text>
+    <text x="497" y="1135" font-size="118" font-style="italic" letter-spacing="-4">Climate</text>
+    <text x="1268" y="1105" font-size="30" text-anchor="end">纸上气候</text>
+    <text x="1268" y="1138" font-family="'Cascadia Code',monospace" font-size="14" text-anchor="end" letter-spacing="2">DATA NARRATIVE / 004</text>
+  </g>
+  <rect width="1600" height="1200" filter="url(#noise)" opacity=".7"/>
+</svg>

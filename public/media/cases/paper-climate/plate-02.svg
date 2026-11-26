@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">册子内页</title>
+  <desc id="desc">三本摊开的册子展示蓝橙暖化条纹、气候数据表格与编辑排版。</desc>
+  <defs>
+    <pattern id="paper" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#171713" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#171713" flood-opacity=".14"/>
+    </filter>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#e9e3d6"/>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <g transform="translate(92 194) rotate(-3 250 250)" filter="url(#shadow)">
+    <rect width="500" height="560" fill="#f7f3e9"/>
+    <g>
+      <rect x="38" y="54" width="13" height="380" fill="#193e57"/>
+      <rect x="51" y="54" width="13" height="380" fill="#23506b"/>
+      <rect x="64" y="54" width="13" height="380" fill="#37667d"/>
+      <rect x="77" y="54" width="13" height="380" fill="#557d90"/>
+      <rect x="90" y="54" width="13" height="380" fill="#7a97a1"/>
+      <rect x="103" y="54" width="13" height="380" fill="#a6b0ad"/>
+      <rect x="116" y="54" width="13" height="380" fill="#c7bda8"/>
+      <rect x="129" y="54" width="13" height="380" fill="#d6a386"/>
+      <rect x="142" y="54" width="13" height="380" fill="#dc7d5b"/>
+      <rect x="155" y="54" width="13" height="380" fill="#dc5435"/>
+      <rect x="168" y="54" width="13" height="380" fill="#ce3625"/>
+      <rect x="181" y="54" width="13" height="380" fill="#a72a25"/>
+      <rect x="194" y="54" width="13" height="380" fill="#74231f"/>
+      <rect x="207" y="54" width="13" height="380" fill="#491d1a"/>
+    </g>
+    <g font-family="'Cascadia Code',monospace" fill="#171713">
+      <text x="38" y="38" font-size="11" letter-spacing="2">PLATE 01 / WARMING STRIPES</text>
+      <text x="38" y="468" font-size="10" fill-opacity=".55">1980</text>
+      <text x="220" y="468" font-size="10" text-anchor="end" fill-opacity=".55">2025</text>
+      <text x="38" y="508" font-size="20" font-family="Georgia,serif">Every stripe is a year.</text>
+      <text x="38" y="533" font-size="11" fill-opacity=".55">EAST CHINA / 45 OBSERVATIONS</text>
+    </g>
+  </g>
+
+  <g transform="translate(650 142) rotate(2 250 280)" filter="url(#shadow)">
+    <rect width="500" height="600" fill="#f7f3e9"/>
+    <g font-family="'Cascadia Code',monospace" fill="#171713">
+      <text x="38" y="42" font-size="11" letter-spacing="2">PLATE 02 / DATA TABLE</text>
+      <text x="38" y="92" font-size="22" font-family="Georgia,serif">Field notes, 1980—2025</text>
+      <path d="M38 112H462M38 162H462M38 212H462M38 262H462M38 312H462M38 362H462M38 412H462M38 462H462" stroke="#171713" stroke-opacity=".25"/>
+    </g>
+    <g font-family="'Cascadia Code',monospace" fill="#171713" font-size="11">
+      <text x="38" y="142">YEAR</text><text x="140" y="142">ANOMALY</text><text x="280" y="142">CITY</text><text x="410" y="142">NOTE</text>
+      <text x="38" y="192">1980</text><text x="140" y="192">−0.31</text><text x="280" y="192">Shanghai</text><text x="410" y="192">baseline</text>
+      <text x="38" y="242">1998</text><text x="140" y="242">+0.74</text><text x="280" y="242">Wuhan</text><text x="410" y="242">flood</text>
+      <text x="38" y="292">2003</text><text x="140" y="292">+0.88</text><text x="280" y="292">Nanjing</text><text x="410" y="292">heatwave</text>
+      <text x="38" y="342">2013</text><text x="140" y="342">+1.06</text><text x="280" y="342">Hangzhou</text><text x="410" y="342">record</text>
+      <text x="38" y="392">2022</text><text x="140" y="392">+1.41</text><text x="280" y="392">Chongqing</text><text x="410" y="392">drought</text>
+      <text x="38" y="442">2025</text><text x="140" y="442">+1.52</text><text x="280" y="442">Shanghai</text><text x="410" y="442">—</text>
+    </g>
+    <g font-family="'Cascadia Code',monospace" fill="#c83a24" font-size="10">
+      <text x="38" y="500">+ 0.21 / DECADE</text>
+      <text x="38" y="524" fill="#171713" fill-opacity=".5">NORMALIZED TO 1980—2000 MEAN</text>
+    </g>
+    <rect x="368" y="486" width="94" height="52" fill="#c83a24"/>
+    <text x="382" y="508" fill="#f7f3e9" font-family="'Cascadia Code',monospace" font-size="10">WARMING</text>
+    <text x="382" y="524" fill="#f7f3e9" font-family="'Cascadia Code',monospace" font-size="10">+1.5°C</text>
+  </g>
+
+  <g transform="translate(1190 250) rotate(-2 150 220)" filter="url(#shadow)">
+    <rect width="300" height="460" fill="#171713"/>
+    <g font-family="Georgia,'Songti SC',serif" fill="#f7f3e9">
+      <text x="32" y="54" font-size="12" font-family="'Cascadia Code',monospace" letter-spacing="2" fill="#ff5a1f">PAPER CLIMATE</text>
+      <text x="32" y="188" font-size="50">A warmer</text>
+      <text x="32" y="234" font-size="50" font-style="italic">reading.</text>
+      <text x="32" y="292" font-size="13" font-family="'Songti SC',serif">把一组气候数据，</text>
+      <text x="32" y="313" font-size="13" font-family="'Songti SC',serif">变成可以翻阅的日常。</text>
+    </g>
+    <g font-family="'Cascadia Code',monospace" fill="#f7f3e9" font-size="9" opacity=".6">
+      <text x="32" y="388">64 PAGES / 148 × 210 MM</text>
+      <text x="32" y="406">EDITORIAL DESIGN / 2025</text>
+    </g>
+    <rect x="32" y="422" width="48" height="4" fill="#ff5a1f"/>
+  </g>
+
+  <g font-family="'Cascadia Code',monospace" fill="#171713">
+    <text x="92" y="68" font-size="17" letter-spacing="3">THREE READING RHYTHMS / BOOK SPREADS</text>
+    <text x="1500" y="68" font-size="17" text-anchor="end">64 PAGES</text>
+    <text x="1500" y="948" font-size="13" fill-opacity=".55" text-anchor="end">PAPER CLIMATE / VISUAL COMMUNICATION</text>
+  </g>
+  <rect width="1600" height="1000" filter="url(#noise)" opacity=".6"/>
+</svg>

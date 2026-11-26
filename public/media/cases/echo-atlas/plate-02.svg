@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">十二段声景索引</title>
+  <desc id="desc">米色纸张背景上，三行四列的十二个圆形声波图案，每个图案下方标注采样信息。</desc>
+  <defs>
+    <pattern id="paper" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#171713" stroke-opacity=".05"/>
+    </pattern>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".08"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" fill="#eee8dc"/>
+  <rect width="1600" height="1000" fill="url(#paper)"/>
+  <g font-family="'Cascadia Code',monospace" fill="#171713" font-size="16">
+    <text x="100" y="74" letter-spacing="3">TWELVE LISTENINGS / VISUAL INDEX</text>
+    <text x="1500" y="74" text-anchor="end">SHEET 02</text>
+  </g>
+  <g fill="none" stroke="#171713">
+    <circle cx="268" cy="260" r="82" stroke-width="1"/>
+    <circle cx="268" cy="260" r="59" stroke-width="1.4"/>
+    <circle cx="268" cy="260" r="36" stroke="#ff5a1f" stroke-width="8"/>
+    <circle cx="268" cy="260" r="12" fill="#171713"/>
+    <path d="M180 260h-30M386 260h30M268 162v-24M268 358v24" stroke-opacity=".45"/>
+
+    <circle cx="650" cy="260" r="82" stroke-width="1"/>
+    <path d="M593 219c22 15 35 24 57 39s34 26 55 42M594 301c23-14 35-23 57-37s34-27 55-43" stroke-width="2"/>
+    <circle cx="650" cy="260" r="17" fill="#ff5a1f" stroke="none"/>
+
+    <circle cx="1032" cy="260" r="82" stroke-width="1"/>
+    <path d="M972 260c13-25 26-38 40-38s25 17 37 38 22 37 36 37 26-14 38-37" stroke-width="1.8"/>
+    <path d="M970 286c14 14 26 19 38 19s24-8 38-19 24-17 38-17 26 7 38 17" stroke-width="1.8" stroke="#ff5a1f"/>
+
+    <circle cx="1414" cy="260" r="82" stroke-width="1"/>
+    <path d="M1337 303l42-87 41 87 42-87 42 87" stroke-width="1.4"/>
+    <circle cx="1414" cy="260" r="7" fill="#ff5a1f" stroke="none"/>
+
+    <circle cx="268" cy="540" r="82" stroke-width="1"/>
+    <circle cx="268" cy="540" r="40" stroke-dasharray="3 7" stroke-width="2"/>
+    <circle cx="268" cy="540" r="72" stroke-dasharray="1 13"/>
+    <path d="M203 540h130M268 475v130" stroke="#ff5a1f"/>
+
+    <circle cx="650" cy="540" r="82" stroke-width="1"/>
+    <path d="M581 521c36-27 72-34 108-20s52 47 46 79-34 55-70 51-61-34-59-65 22-43 44-40 30 28 23 46-26 21-39 11" stroke-width="1.7"/>
+
+    <circle cx="1032" cy="540" r="82" stroke-width="1"/>
+    <path d="M960 540h145M974 512h116M988 568h91M1007 596h52" stroke-width="1.5"/>
+    <circle cx="1001" cy="540" r="6" fill="#ff5a1f" stroke="none"/>
+
+    <circle cx="1414" cy="540" r="82" stroke-width="1"/>
+    <path d="M1346 508l137 64M1357 570l114-61M1373 487l83 108" stroke-width="1.4"/>
+
+    <circle cx="268" cy="820" r="82" stroke-width="1"/>
+    <path d="M195 787c35 0 42 65 73 65s27-65 72-65 36 65 74 65 27-65 74-65" stroke-width="1.6"/>
+
+    <circle cx="650" cy="820" r="82" stroke-width="1"/>
+    <path d="M576 820h148M650 746v148" stroke-dasharray="2 6"/>
+    <circle cx="650" cy="820" r="48" stroke="#ff5a1f" stroke-width="3"/>
+
+    <circle cx="1032" cy="820" r="82" stroke-width="1"/>
+    <path d="M959 847c24-61 47-91 70-91s45 63 72 91M978 847c18-37 34-55 51-55s39 30 59 55" stroke-width="1.5"/>
+
+    <circle cx="1414" cy="820" r="82" stroke-width="1"/>
+    <path d="M1341 820c0-40 33-73 73-73 37 0 68 28 72 64" stroke="#ff5a1f" stroke-width="5"/>
+    <path d="M1341 820c0 40 33 73 73 73 37 0 68-28 72-64" stroke-width="1.4"/>
+    <circle cx="1486" cy="820" r="7" fill="#171713" stroke="none"/>
+  </g>
+  <g font-family="'Cascadia Code',monospace" fill="#171713" font-size="13" letter-spacing="1.2">
+    <g>
+      <text x="194" y="374">01 / MORNING GATE</text><text x="194" y="395" fill-opacity=".55">06:42 · 61dB</text>
+      <text x="576" y="374">02 / CROSSING</text><text x="576" y="395" fill-opacity=".55">08:15 · 74dB</text>
+      <text x="958" y="374">03 / MARKET</text><text x="958" y="395" fill-opacity=".55">10:28 · 79dB</text>
+      <text x="1340" y="374">04 / UNDER VIADUCT</text><text x="1340" y="395" fill-opacity=".55">12:06 · 83dB</text>
+    </g>
+    <g>
+      <text x="194" y="654">05 / SCHOOL BELL</text><text x="194" y="675" fill-opacity=".55">15:30 · 66dB</text>
+      <text x="576" y="654">06 / AFTERNOON RAIN</text><text x="576" y="675" fill-opacity=".55">16:12 · 52dB</text>
+      <text x="958" y="654">07 / BUS STOP</text><text x="958" y="675" fill-opacity=".55">18:04 · 72dB</text>
+      <text x="1340" y="654">08 / CLOSING SHUTTERS</text><text x="1340" y="675" fill-opacity=".55">21:17 · 69dB</text>
+    </g>
+    <g>
+      <text x="194" y="934">09 / NIGHT MARKET</text><text x="194" y="955" fill-opacity=".55">22:30 · 77dB</text>
+      <text x="576" y="934">10 / EMPTY ALLEY</text><text x="576" y="955" fill-opacity=".55">23:46 · 38dB</text>
+      <text x="958" y="934">11 / LAST TRAIN</text><text x="958" y="955" fill-opacity=".55">00:08 · 71dB</text>
+      <text x="1340" y="934">12 / DAWN</text><text x="1340" y="955" fill-opacity=".55">05:20 · 43dB</text>
+    </g>
+  </g>
+  <rect width="1600" height="1000" filter="url(#noise)" opacity=".55"/>
+</svg>
